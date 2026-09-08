@@ -10,7 +10,7 @@ pipeline {
 
         stage('CQA') {
             steps {
-                withSonarQubeEnv("CQA_credentials") {
+                withSonarQubeEnv("CQA_credentails") {
                     sh '''
                         mvn clean verify \
                         org.sonarsource.scanner.maven:sonar-maven-plugin:sonar \
